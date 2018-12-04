@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>ParaTable!</title>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Bootstrap core CSS -->
+  <link href="static/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+  <link href="static/css/mdb.min.css" rel="stylesheet">
+  <!-- Your custom styles (optional) -->
+  <link href="static/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- Это шапка! Я поместил ее в header ибо так надо по госту! (но это не точно) -->
+
+  <header>
+    <!-- Коротко пройдемся по тегам и классам nav = наш тег навигационной панели, navbar = подгружаем стиль из бутстрапа,
+    fixed-top фиксируем сверху нашей странице, navbar-dark темная тема, danger-color крассный цвет, scrolling-navbar чтоб скролился вместе со страинцей
+    -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark danger-color scrolling-navbar">
+      <!-- а тег для текста, класс navbar-brand выделенный текст для бренда-->
+      <a class="navbar-brand" href="#"><strong>PapaTable.kz</strong></a>
+      <!-- во славу адаптивности! Потыкай разрешение и увидишь как это работает по классам тут всё понятно думаю-->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!--А вот и кнопошки подъхали-->
+      <div class="collapse navbar-collapse"  id="navbarSupportedContent">
+        <!-- ul,li штуки для списков, nav-item эт стиль для кнопочки mr-auto = автоматическая настройка размера во имя адаптивности-->
+        <!-- ВАЖНО, ПОТОМ ПРИЖМУ В ПРАВУЮ СТОРОНУ -->
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <!-- href замени в ruby шоб работала переадресация-->
+            <a class="nav-link" href="login.html">Вход</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Ну main это тоже гост -->
+  <main>
+    <!-- container это штука с отступами побокам шоб было как у людей -->
+    <div class="container">
+      <!-- jumbotron эта штука чтоб хоть как-то выделить твою таблицу при желеании можно удалить-->
+      <div class="jumbotron">
+        <!--Дарова это табилца! У нее есть id скорее всего оно понадобится в ruby. Оно тут от балды!-->
+        <table id="tablePreview" class="table table-hover table-bordered">
+          <!-- Это оглавление таблицы-->
+          <thead>
+          <tr>
+            <th>#</th>
+            <th>ФИО</th>
+            <th>Страна</th>
+            <th>Очки</th>
+          </tr>
+          </thead>
+          <!--Это тело таблицы-->
+          <tbody>
+          <tr>
+            <th scope="row">%userid%</th>
+            <td>%username%</td>
+            <td>%usercountry%</td>
+            <td>%userscore%</td>
+          </tr>
+          <tr>
+            <th scope="row">%userid%</th>
+            <td>%username%</td>
+            <td>%usercountry%</td>
+            <td>%userscore%</td>
+          </tr>
+          <tr>
+            <th scope="row">%userid%</th>
+            <td>%username%</td>
+            <td>%usercountry%</td>
+            <td>%userscore%</td>
+          </tr>
+          <tr>
+            <th scope="row">%userid%</th>
+            <td>%username%</td>
+            <td>%usercountry%</td>
+            <td>%userscore%</td>
+          </tr>
+          <tr>
+            <th scope="row">%userid%</th>
+            <td>%username%</td>
+            <td>%usercountry%</td>
+            <td>%userscore%</td>
+          </tr>
+          <tr>
+            <th scope="row">%userid%</th>
+            <td>%username%</td>
+            <td>%usercountry%</td>
+            <td>%userscore%</td>
+          </tr>
+          <tr>
+            <th scope="row">%userid%</th>
+            <td>%username%</td>
+            <td>%usercountry%</td>
+            <td>%userscore%</td>
+          </tr>
+          <tr>
+            <th scope="row">%userid%</th>
+            <td>%username%</td>
+            <td>%usercountry%</td>
+            <td>%userscore%</td>
+          </tr>
+          <tr>
+            <th scope="row">%userid%</th>
+            <td>%username%</td>
+            <td>%usercountry%</td>
+            <td>%userscore%</td>
+          </tr>
+          <tr>
+            <th scope="row">%userid%</th>
+            <td>%username%</td>
+            <td>%usercountry%</td>
+            <td>%userscore%</td>
+          </tr>
+          <tr>
+            <th scope="row">%userid%</th>
+            <td>%username%</td>
+            <td>%usercountry%</td>
+            <td>%userscore%</td>
+          </tr>
+          <tr>
+            <th scope="row">%userid%</th>
+            <td>%username%</td>
+            <td>%usercountry%</td>
+            <td>%userscore%</td>
+          </tr>
+          <tr>
+            <th scope="row">%userid%</th>
+            <td>%username%</td>
+            <td>%usercountry%</td>
+            <td>%userscore%</td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </main>
+
+  <!-- SCRIPTS -->
+  <!-- JQuery -->
+  <script type="text/javascript" src="static/js/jquery-3.3.1.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="static/js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="static/js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="static/js/mdb.min.js"></script>
+</body>
+
+</html>

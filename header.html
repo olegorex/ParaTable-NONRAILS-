@@ -1,0 +1,25 @@
+<header>
+    <!-- Коротко пройдемся по тегам и классам nav = наш тег навигационной панели, navbar = подгружаем стиль из бутстрапа,
+    fixed-top фиксируем сверху нашей странице, navbar-dark темная тема, danger-color крассный цвет, scrolling-navbar чтоб скролился вместе со страинцей
+    -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark danger-color scrolling-navbar">
+        <!-- а тег для текста, класс navbar-brand выделенный текст для бренда-->
+        <a class="navbar-brand" href="#"><strong>{{ParaTable.kz}}!</strong></a>
+        <!-- во славу адаптивности! Потыкай разрешение и увидишь как это работает по классам тут всё понятно думаю-->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!--А вот и кнопошки подъхали-->
+        <div class="collapse navbar-collapse"  id="navbarSupportedContent">
+            <!-- ul,li штуки для списков, nav-item эт стиль для кнопочки mr-auto = автоматическая настройка размера во имя адаптивности-->
+            <!-- ВАЖНО, ПОТОМ ПРИЖМУ В ПРАВУЮ СТОРОНУ -->
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <!-- href замени в ruby шоб работала переадресация-->
+                    <a class="nav-link" href="login.html">Вход</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
